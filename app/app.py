@@ -10,6 +10,8 @@ Variáveis de ambiente esperadas (ver .env.example):
   CACHE_HOURS    -> horas antes de buscar dados novos na API (default 6)
 
   
+
+  
 """
 
 import os
