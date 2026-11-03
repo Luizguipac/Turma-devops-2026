@@ -21,7 +21,6 @@ SERIES = {
     432: {"name": "Meta Selic definida pelo Copom", "unit": "% a.a.", "casas": 2},
     433: {"name": "IPCA - variação mensal", "unit": "%", "casas": 2},
     13522: { "name": "Limite inferior da meta de inflação", "unit": "%", "casas": 2},
-    13523: { "name": "Limite superior da meta de inflação", "unit": "%", "casas": 2}
 
 }
 POINTS_PER_SERIES = 30
