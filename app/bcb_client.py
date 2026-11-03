@@ -17,10 +17,33 @@ DB_URL = os.environ.get("AIVEN_DB_URL")
 # Séries do SGS/BCB — dados abertos, sem autenticação.
 # Referência completa de códigos: https://www3.bcb.gov.br/sgspub
 SERIES = {
-    1:   {"name": "Dólar comercial (venda)", "unit": "R$", "casas": 4},
-    432: {"name": "Meta Selic definida pelo Copom", "unit": "% a.a.", "casas": 2},
-    433: {"name": "IPCA - variação mensal", "unit": "%", "casas": 2},
+    1: {
+        "name": "Dólar comercial (venda)",
+        "unit": "R$",
+        "casas": 4
+    },
+    432: {
+        "name": "Meta Selic definida pelo Copom",
+        "unit": "% a.a.",
+        "casas": 2
+    },
+    13521: {
+        "name": "Meta de inflação (IPCA)",
+        "unit": "%",
+        "casas": 2
+    },
+    13522: {
+        "name": "Limite inferior da meta de inflação",
+        "unit": "%",
+        "casas": 2
+    },
+    13523: {
+        "name": "Limite superior da meta de inflação",
+        "unit": "%",
+        "casas": 2
+    }
 }
+
 POINTS_PER_SERIES = 30
 
 # Pool de conexões: a Aiven fica em outra região/rede que o Render, então
