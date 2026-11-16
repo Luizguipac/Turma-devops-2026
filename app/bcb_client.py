@@ -17,10 +17,22 @@ DB_URL = os.environ.get("AIVEN_DB_URL")
 # Séries do SGS/BCB — dados abertos, sem autenticação.
 # Referência completa de códigos: https://www3.bcb.gov.br/sgspub
 SERIES = {
-    1:   {"name": "Dólar comercial (venda)", "unit": "R$", "casas": 4},
-    432: {"name": "Meta Selic definida pelo Copom", "unit": "% a.a.", "casas": 2},
-    433: {"name": "IPCA - variação mensal", "unit": "%", "casas": 2},
-    13522: {"name": "Limite inferior da meta de inflação", "unit": "%","casas": 2}
+    1:     {"name": "Dólar comercial (venda)", "unit": "R$", "casas": 4},
+    432:   {"name": "Meta Selic definida pelo Copom", "unit": "% a.a.", "casas": 2},
+    433:   {"name": "IPCA - variação mensal", "unit": "%", "casas": 2},
+    13522: {"name": "IPCA - acumulado em 12 meses", "unit": "%", "casas": 2},
+
+    # Novos dados (Câmbio, Juros, Inflação e Atividade)
+    21619: {"name": "Euro comercial (venda)", "unit": "R$", "casas": 4},
+    12:    {"name": "Taxa CDI (diária)", "unit": "% a.d.", "casas": 6},
+    4389:  {"name": "Taxa CDI (anualizada base 252)", "unit": "% a.a.", "casas": 2},
+    189:   {"name": "IGP-M - variação mensal", "unit": "%", "casas": 2},
+    188:   {"name": "INPC - variação mensal", "unit": "%", "casas": 2},
+    226:   {"name": "Taxa Referencial (TR)", "unit": "%", "casas": 4},
+    13521: {"name": "Meta para a inflação (CMN)", "unit": "%", "casas": 2},
+    24363: {"name": "IBC-Br - Índice de Atividade Econômica", "unit": "Índice", "casas": 2},
+    24369: {"name": "Taxa de desocupação (PNADC)", "unit": "%", "casas": 1},
+    3546:  {"name": "Reservas internacionais (liquidez)", "unit": "US$ milhões", "casas": 0},
 }
 POINTS_PER_SERIES = 30
 
